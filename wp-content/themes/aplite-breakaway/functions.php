@@ -228,12 +228,9 @@ require get_template_directory() . '/inc/post_type/services-post-type.php';
 
 require get_template_directory() . '/inc/post_type/testimonial-post-type.php';
 
-//remove empty p tag 
+//remove empty paragraph tag section
 
 remove_filter('the_content', 'wpautop');
 
-// function custom_excerpt_length( $length ) {
-//     return 10;
-// }
-// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 
