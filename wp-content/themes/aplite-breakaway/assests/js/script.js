@@ -1,0 +1,1 @@
+jQuery('.main_footer .textwidget').attr('footer_right');
