@@ -152,6 +152,8 @@ add_action( 'widgets_init', 'aplite_breakaway_widgets_footerRight' );
 /**
  * Enqueue scripts and styles.
  */
+
+
 function aplite_breakaway_scripts() {
 	wp_enqueue_style( 'aplite-breakaway-style', get_stylesheet_uri() );
 	wp_enqueue_style('aplite-breakaway-bootstrap-css', get_template_directory_uri() . '/assests/css/bootstrap.min.css', array(),'');
@@ -163,10 +165,12 @@ function aplite_breakaway_scripts() {
 	wp_enqueue_style('aplite-breakaway-fontawsome1-swap-css', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,800&display=swap', array(),'');
 	wp_enqueue_style('aplite-breakaway-fontawsome2-css', 'https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap', array(),'');
 	wp_enqueue_style('aplite-breakaway-fonrtawsome3-css', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap', array(),'');
+	wp_enqueue_style('aplite-breakaway-model-css', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', array(),'');
 	
 	wp_enqueue_script('aplite-breakaway-wow',get_template_directory_uri().'/assests/js/wow.min.js',array(),'',true);
 	wp_enqueue_script('aplite-breakaway-jquery',get_template_directory_uri().'/assests/js/jquery.min.js',array(),'',true);
 	wp_enqueue_script('aplite-breakaway-scriptjs',get_template_directory_uri().'/assests/js/script.js',array(),'',true);
+	wp_enqueue_script('aplite-breakaway-modeljs','https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js',array(),'',true);
 	wp_enqueue_script('aplite-breakaway-slick',get_template_directory_uri().'/assests/js/slick.min.js',array(),'',true);
 	wp_enqueue_script('aplite-breakaway-cdn','https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js',array(),'',true);
 	wp_enqueue_script('aplite-breakaway-bootstrap',get_template_directory_uri().'/assests/js/bootstrap.min.js',array(),'',true);
@@ -228,9 +232,12 @@ require get_template_directory() . '/inc/post_type/services-post-type.php';
 
 require get_template_directory() . '/inc/post_type/testimonial-post-type.php';
 
-//remove empty paragraph tag section
+//remove empty p tag 
 
 remove_filter('the_content', 'wpautop');
 
-
+// function custom_excerpt_length( $length ) {
+//     return 10;
+// }
+// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 

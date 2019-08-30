@@ -11,9 +11,9 @@ get_template_part('template-parts/content','testimonial');
                'post_type' =>'testimonial',
                'posts_per_page'=> -1,
                'oreder_by' =>'DESC'
-
         );
-    $query = new WP_Query($args);
+
+       $query = new WP_Query($args);
         if($query->have_posts()):
       ?>
         <ul>

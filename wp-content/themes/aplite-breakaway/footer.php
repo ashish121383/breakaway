@@ -40,5 +40,10 @@
       </div>
   </div>
   <?php wp_footer();  ?>
+
+  <button class="js-modal-btn" data-video-id="7TUOI23spt0">Open Video</button>
+  <script>
+  $(".js-modal-btn").modalVideo();
+  </script>
 </body>
 </html>

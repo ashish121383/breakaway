@@ -18,7 +18,7 @@ get_template_part( 'template-parts/content', 'banner' );
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
           <div class="video-icon">
-            <a href="https://www.youtube.com/watch?v=<?php the_field('custom_video_id');  ?>" class="video-view">
+            <a data-fancybox href="https://www.youtube.com/watch?v=<?php the_field('custom_video_id');  ?>" class="video-view">
               <i class="fa fa-play"></i>
             </a>
           </div>

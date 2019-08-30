@@ -1389,10 +1389,10 @@ animation-iteration-count: infinite; */
   margin-top: 20px;
 }
 
-.blog{
+.blog-section{
   z-index: 1;
 }
-.blog:before{
+.blog-section:before{
     content: "";
     position: absolute;
     left: 0;
@@ -1403,7 +1403,7 @@ animation-iteration-count: infinite; */
     z-index: 0;
 }
 
-.blog h3, .blog p {
+.blog-section h3, .blog-section p {
   position: relative;
   z-index: 1
 }
@@ -1485,7 +1485,7 @@ animation-iteration-count: infinite; */
     background-color: #000000;
 }
 
-img.blog-image {
+img.blog-section-image {
     width: 100%;
     object-fit: cover;
 }
@@ -1826,3 +1826,7 @@ img.blog-image {
 .healtinner a{
   color: #9e9D9D;
 }
+
+.blog-section_first_section{
+  padding:55px 0px;
+} 
